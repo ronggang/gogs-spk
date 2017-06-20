@@ -18,8 +18,9 @@ FILE_CREATE_LOG="${DIR_GOGS}/wizard_create_log"
 
 export HOME=${DIR_GOGS}
 #export PATH=$PATH:~/opt/bin  # to Git. Not necessary with Git Server (Synology)
-export USER=root
-export USERNAME=root
+# 用户由 root 改为 git，需要在DSM里建立一个git用户，专门用于gogs启动账号
+export USER=git
+export USERNAME=git
 
 start_daemon ()
 {
